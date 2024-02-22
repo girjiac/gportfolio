@@ -1,16 +1,13 @@
-# This is a sample Python script.
+import streamlit as st
+st.set_page_config(layout="wide")
+col1, col2 = st.columns(2, gap="small")
+with col1:
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    st.image('images/GirijaAI4.jpg', width=75)
+with col2:
+    st.title('Girija Chinnaraj')
+    content = """
+    Hi, I am Girija! I am a Python learner, and founder of 6F. 
+    I graduated in 2023 with a Master of Science in Computer Technologies from the University of Bharathiar in India with a focus on using Python for remote sensing.
+    """
+    st.info(content)
